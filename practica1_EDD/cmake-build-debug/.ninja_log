@@ -1,0 +1,15 @@
+# ninja log v5
+1	455	1709628174068948731	CMakeFiles/practica1_EDD.dir/main.cpp.o	a690e4ad85715d1d
+2	563	1709549805824957090	CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o	159454654568f1d0
+0	417	1709626767060774038	CMakeFiles/practica1_EDD.dir/Juego.cpp.o	140ab09b2684a043
+1	430	1709624383247790914	CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o	2c56ddaef6e541d4
+1	458	1709628174072948922	CMakeFiles/practica1_EDD.dir/estructuras/LD_Generica.cpp.o	e1fe9320b757b684
+2	388	1709622403688259068	CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o	ce1be9c22fba69fa
+1	416	1709525101827955413	CMakeFiles/practica1_EDD.dir/Cartas.cpp.o	92fefc77e11db65
+450	870	1709549806132961371	CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o	61c5a01cbf2c4a15
+1	410	1709626740671972157	CMakeFiles/practica1_EDD.dir/Gestor.cpp.o	15df15998c95cab
+2	449	1709549805708955479	CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o	f327f68f242436b4
+1	521	1709619576926537026	CMakeFiles/practica1_EDD.dir/Carta.cpp.o	5d0763c3208be58a
+417	504	1709626767148776755	practica1_EDD	cd3657b333e94845
+1	437	1709629081671028071	CMakeFiles/practica1_EDD.dir/main.cpp.o	a690e4ad85715d1d
+437	537	1709629081771030272	practica1_EDD	3c8325a0b7a03f7d
