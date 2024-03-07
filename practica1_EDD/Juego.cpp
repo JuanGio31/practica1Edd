@@ -10,12 +10,15 @@ void Juego::llenarTab() {
         for (int j = 0; j < 7; ++j) {
             if ((i == 0 && j != 2) || i == 1) { //asignar val -> reserva, descarte y bases.
                 if (i == 0 && j == 0) {
-                    string tmp = "[" + gestor.getReserva().pintarPrimero() + "]";
-//                    string tmp = "[ ZZZ ]";
-                    tablero[i][j] = tmp;
+                    if (!gestor.getReserva().vacia()) {
+                        string tmp = "[" + gestor.getReserva().frente().representar() + "]";
+                        tablero[i][j] = tmp;
+                    } else {
+                        tablero[i][j] = "[     ]";
+                    }
                 } else if (i == 0 && j == 1) {
                     if (!gestor.getDescarte().vacia()) {
-                        string tmp = "[" + gestor.getDescarte().pintarPrimero() + "]";
+                        string tmp = "[" + gestor.getDescarte().ultimo().representar() + "]";
                         tablero[i][j] = tmp;
                     } else {
                         tablero[i][j] = "[     ]";
@@ -29,31 +32,28 @@ void Juego::llenarTab() {
         }
     }
 
-//    llenarColTab(gestor.getA1(), 0);
-//    llenarColTab(gestor.getB1(), 1);
-//    llenarColTab(gestor.getC1(), 2);
-//    llenarColTab(gestor.getD1(), 3);
-//    llenarColTab(gestor.getE1(), 4);
-//    llenarColTab(gestor.getF1(), 5);
-//    llenarColTab(gestor.getG1(), 6);
+
+    llenarColTab(gestor.getA1(), 0);
+    llenarColTab(gestor.getB1(), 1);
+    llenarColTab(gestor.getC1(), 2);
+    llenarColTab(gestor.getD1(), 3);
+    llenarColTab(gestor.getE1(), 4);
+    llenarColTab(gestor.getF1(), 5);
+    llenarColTab(gestor.getG1(), 6);
 
 }
 
-void Juego::llenarColTab(ListaDoble list, int columna) {
-    if (list.vacia()) {
+void Juego::llenarColTab(Pila pila, int columna) {
+    if (pila.vacia()) {
         tablero[1][columna] = "[     ]";
     } else {
-        int cont = 1;
-        NodoDoble *ac = list.getInicio();
-        while (ac) {
-            if (cont == 1) {
-                list.frente().cambiarVisibilidad(1);
-            }
-            tablero[cont][columna] = "[" + ac->mostrar() + "]";
-            ac = ac->getSiguiente();
-            cont++;
+        int cont = pila.contador();
+        pila.getCima()->getDato().cambiarVisibilidad(1);
+        Pila tmp = pila;
+        while (!tmp.vacia()) {
+            tablero[cont][columna] = "[" + tmp.pop().representar() + "]";
+            cont--;
         }
-        delete ac;
     }
 }
 
@@ -124,7 +124,8 @@ void Juego::verMenu() {
                 cin >> seleccion;
                 cout << "\n\tSelecciona la columa destino [A-G]" << " exceptuando " << seleccion << " > ";
                 cin >> destino;
-                //gestor.traslado(const_cast<ListaDoble &>(gestor.getB1()), const_cast<ListaDoble &>(gestor.getA1()));
+                gestor.trasladar(const_cast<Pila &>(gestor.getA1()), const_cast<Pila &>(gestor.getB1()));
+                //gestor.trasladar(const_cast<ListaDoble &>(gestor.getB1()), const_cast<ListaDoble &>(gestor.getA1()));
                 break;
             case 2:
                 gestor.rotarColas();
@@ -146,6 +147,30 @@ void Juego::verMenu() {
     }
 }
 
-Juego::Juego() {
+void Juego::moverEntreTablero(char a, char b) {
+    Pila *aux1 = new Pila();
+    Pila *aux2 = new Pila();
+
+    switch (a) {
+        case 'A':
+            aux1 = &gestor.getA1();
+            break;
+        case 'B':
+            break;
+        case 'C':
+            break;
+        case 'D':
+            break;
+        case 'E':
+            break;
+        case 'F':
+            break;
+        case 'G':
+            break;
+        default:
+            break;
+    }
 
 }
+
+Juego::Juego() {}

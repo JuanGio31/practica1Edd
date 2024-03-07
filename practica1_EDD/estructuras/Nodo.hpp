@@ -14,7 +14,7 @@ private:
 public:
     explicit Nodo(const Carta &dato);
 
-    const Carta &getDato() const;
+     Carta &getDato();
 
     void setDato(const Carta &dato);
 

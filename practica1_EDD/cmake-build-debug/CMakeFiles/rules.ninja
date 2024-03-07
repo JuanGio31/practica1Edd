@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/giovanic/Descargas/novelas/clion-2023.3.3/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/giovanic/CLionProjects/practica1_EDD -B/home/giovanic/CLionProjects/practica1_EDD/cmake-build-debug
+  command = /home/giovanic/Descargas/novelas/clion-2023.3.3/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/giovanic/CLionProjects/practica1Edd/practica1_EDD -B/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

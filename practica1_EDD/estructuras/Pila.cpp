@@ -21,7 +21,7 @@ Carta Pila::pop() {
         Carta temp = cima->getDato();
         Nodo *del = cima;
         cima = cima->getSiguiente();
-        delete del;
+       // delete del;
         return temp;
     } else {
         throw "Error-> Pila vacia!";
@@ -67,3 +67,5 @@ int Pila::contador() {
     }
     return 0;
 }
+
+Nodo *Pila::getCima() { return cima; }

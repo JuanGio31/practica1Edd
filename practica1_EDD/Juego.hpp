@@ -23,7 +23,9 @@ public:
 
     Juego();
 
-    void llenarColTab(ListaDoble list, int columna);
+    void llenarColTab(Pila list, int columna);
+
+    void moverEntreTablero(char a, char b);
 };
 
 #endif //PRACTICA1_EDD_JUEGO_HPP

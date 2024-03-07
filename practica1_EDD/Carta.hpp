@@ -18,6 +18,8 @@ private:
     char tipo;
 public:
 
+    int getValor();
+
     void asignarColor(char tipoCarta);
 
     void asignarSimbolo(int _v);
@@ -31,8 +33,6 @@ public:
     Carta(int valor, char tipo); //constructor con args
 
     virtual ~Carta();  //destructor
-
-
 
     void cambiarVisibilidad(int op);
 };

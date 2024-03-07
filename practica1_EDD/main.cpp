@@ -1,15 +1,9 @@
-#include <iostream>
+#include<iostream>
 #include "Carta.hpp"
 #include "estructuras/Pila.hpp"
 #include "estructuras/Cola.hpp"
-
-
-//#include "estructuras/ListaDoble.hpp"
-//#include "Gestor.hpp"
-//#include "Juego.hpp"
-//
-
 #include "estructuras/LD_Generica.hpp"
+#include "Juego.hpp"
 
 void verEjemplosPilas_Colas() {
     Pila tmp;
@@ -88,14 +82,10 @@ void ListaGen() {
 }
 
 int main() {
-    cout << "Hello world\n\n";
-    ListaGen();
-
-
 //    Gestor gt;
 
-//    Juego jg;
-//    jg.verMenu();
+    Juego jg;
+    jg.verMenu();
 
 //    verEjemplosPilas_Colas();
     //verListaDoble();

@@ -31,7 +31,7 @@ private:
     void repartir();
 
 public:
-    const Cola &getReserva() const;
+    Cola getReserva() const;
 
     Cola getDescarte();
 
@@ -43,7 +43,7 @@ public:
 
     void rotarColas();
 
-    const Pila &getA1() const;
+     Pila &getA1() ;
 
     const Pila &getB1() const;
 
@@ -57,7 +57,7 @@ public:
 
     const Pila &getG1() const;
 
-    void traslado(ListaDoble &l1, ListaDoble &l2);
+    void trasladar(Pila &p1, Pila &p2);
 };
 
 #endif //PRACTICA1_EDD_GESTOR_HPP

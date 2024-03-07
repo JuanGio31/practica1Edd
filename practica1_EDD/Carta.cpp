@@ -7,7 +7,7 @@
 Carta::~Carta() {}
 
 Carta::Carta(int valor, char tipo) : valor(valor), tipo(tipo) {
-    this->visibilidad = true;
+    this->visibilidad = false;
     asignarSimbolo(valor);
     asignarColor(tipo);
 }
@@ -64,3 +64,8 @@ void Carta::asignarColor(char tipoCarta) {
 }
 
 Carta::Carta() {}
+
+int Carta::getValor() {
+    return this->valor;
+}
+

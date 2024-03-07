@@ -4,7 +4,7 @@
 
 #include "Nodo.hpp"
 
-const Carta &Nodo::getDato() const {
+ Carta &Nodo::getDato()  {
     return dato;
 }
 

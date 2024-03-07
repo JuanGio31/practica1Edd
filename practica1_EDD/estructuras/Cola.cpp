@@ -44,7 +44,7 @@ Carta Cola::pop() {
 }
 
 Carta &Cola::frente()  {
-    return const_cast<Carta &>(inicio->getDato());
+    return inicio->getDato();
 }
 
 Carta Cola::cabezal() const{
@@ -56,7 +56,7 @@ string Cola::pintarPrimero() const {
 }
 
 Carta &Cola::ultimo() {
-    return const_cast<Carta &>(final->getDato());
+    return final->getDato();
 }
 
 void Cola::push(const Carta &carta) {

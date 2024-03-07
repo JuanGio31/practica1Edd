@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/giovanic/CLionProjects/practica1_EDD/cmake-build-debug",
-		"source" : "/home/giovanic/CLionProjects/practica1_EDD"
+		"build" : "/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/cmake-build-debug",
+		"source" : "/home/giovanic/CLionProjects/practica1Edd/practica1_EDD"
 	},
 	"version" : 
 	{

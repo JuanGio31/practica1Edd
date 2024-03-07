@@ -18,6 +18,8 @@ public:
 
     Pila();
 
+    Nodo *getCima();
+
     void mostrar();
     bool vacia();
 
