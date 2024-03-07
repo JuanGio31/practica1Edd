@@ -86,12 +86,16 @@ Gestor::Gestor() {
 void Gestor::trasladar(Pila &p1, Pila &p2) {
     int x = p1.getCima()->getDato().getValor();
     int y = p2.getCima()->getDato().getValor();
-    if (x < y) {
-        p2.push(p1.pop());
+    if (x == y - 1) {
+        if (p1.getCima()->getDato().getColor() != p2.getCima()->getDato().getColor()) {
+            p2.push(p1.pop());
+        } else {
+            cout << endl << "\tNo es posible realizar el movimiento."
+                 << endl << "\tLos colores de las cartas(R y N) deben ir intercalados\n";
+        }
     } else {
-        cout << endl << "\n No es posible realizar el movimiento." << endl;
+        cout << endl << "\tNo es posible realizar el movimiento." << endl;
     }
-
 }
 
 /**
@@ -110,23 +114,43 @@ void Gestor::rotarColas() {
     }
 }
 
+Pila &Gestor::obtenerPilaEspecifica(char a) {
+    switch (a) {
+        case 'A':
+            return this->getA1();
+        case 'B':
+            return this->getB1();
+        case 'C':
+            return this->getC1();
+        case 'D':
+            return this->getD1();
+        case 'E':
+            return this->getE1();
+        case 'F':
+            return this->getF1();
+        case 'G':
+            return this->getG1();
+    }
+    throw "No encontrado";
+}
+
 Cola Gestor::getReserva() const { return reserva; }
 
 Cola Gestor::getDescarte() { return descarte; }
 
 
- Pila &Gestor::getA1()  { return a1; }
+Pila &Gestor::getA1() { return a1; }
 
-const Pila &Gestor::getB1() const { return b1; }
+Pila &Gestor::getB1() { return b1; }
 
-const Pila &Gestor::getC1() const { return c1; }
+Pila &Gestor::getC1() { return c1; }
 
-const Pila &Gestor::getD1() const { return d1; }
+Pila &Gestor::getD1() { return d1; }
 
-const Pila &Gestor::getE1() const { return e1; }
+Pila &Gestor::getE1() { return e1; }
 
-const Pila &Gestor::getF1() const { return f1; }
+Pila &Gestor::getF1() { return f1; }
 
-const Pila &Gestor::getG1() const { return g1; }
+Pila &Gestor::getG1() { return g1; }
 
 Gestor::~Gestor() = default;

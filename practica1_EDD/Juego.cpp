@@ -2,6 +2,7 @@
 // Created by giovanic on 4/03/24.
 //
 
+#include <limits>
 #include "Juego.hpp"
 
 
@@ -116,7 +117,11 @@ void Juego::verMenu() {
         pintarTablero();
         cout << menuOp;
         cin >> op;
-
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            op = -1;
+        }
         switch (op) {
             case 1:
                 char seleccion, destino;
@@ -124,8 +129,7 @@ void Juego::verMenu() {
                 cin >> seleccion;
                 cout << "\n\tSelecciona la columa destino [A-G]" << " exceptuando " << seleccion << " > ";
                 cin >> destino;
-                gestor.trasladar(const_cast<Pila &>(gestor.getA1()), const_cast<Pila &>(gestor.getB1()));
-                //gestor.trasladar(const_cast<ListaDoble &>(gestor.getB1()), const_cast<ListaDoble &>(gestor.getA1()));
+                moverEntreTablero(seleccion, destino);
                 break;
             case 2:
                 gestor.rotarColas();
@@ -144,33 +148,20 @@ void Juego::verMenu() {
                 break;
         }
         cout << endl;
+        cin.clear();
     }
 }
 
 void Juego::moverEntreTablero(char a, char b) {
-    Pila *aux1 = new Pila();
-    Pila *aux2 = new Pila();
-
-    switch (a) {
-        case 'A':
-            aux1 = &gestor.getA1();
-            break;
-        case 'B':
-            break;
-        case 'C':
-            break;
-        case 'D':
-            break;
-        case 'E':
-            break;
-        case 'F':
-            break;
-        case 'G':
-            break;
-        default:
-            break;
+    if (a != b) {
+        gestor.trasladar(
+                gestor.obtenerPilaEspecifica(a),
+                gestor.obtenerPilaEspecifica(b));
+    } else {
+        cout << endl << "\tNo es posible realizar el movimiento, "
+             << " por que " << a << " y " << b << " son iguales."
+             << endl;
     }
-
 }
 
 Juego::Juego() {}

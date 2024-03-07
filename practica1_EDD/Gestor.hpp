@@ -43,21 +43,23 @@ public:
 
     void rotarColas();
 
-     Pila &getA1() ;
+    Pila &getA1();
 
-    const Pila &getB1() const;
+    Pila &getB1();
 
-    const Pila &getC1() const;
+    Pila &getC1();
 
-    const Pila &getD1() const;
+    Pila &getD1();
 
-    const Pila &getE1() const;
+    Pila &getE1();
 
-    const Pila &getF1() const;
+    Pila &getF1();
 
-    const Pila &getG1() const;
+    Pila &getG1();
 
     void trasladar(Pila &p1, Pila &p2);
+
+    Pila &obtenerPilaEspecifica(char a);
 };
 
 #endif //PRACTICA1_EDD_GESTOR_HPP

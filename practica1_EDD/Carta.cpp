@@ -65,7 +65,7 @@ void Carta::asignarColor(char tipoCarta) {
 
 Carta::Carta() {}
 
-int Carta::getValor() {
-    return this->valor;
-}
+int Carta::getValor() { return this->valor; }
+
+char Carta::getColor() { return this->color; }
 

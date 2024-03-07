@@ -35,6 +35,8 @@ public:
     virtual ~Carta();  //destructor
 
     void cambiarVisibilidad(int op);
+
+    char getColor();
 };
 
 #endif //PRACTICA1_EDD_CARTA_HPP
