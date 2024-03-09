@@ -8,9 +8,11 @@
 #include "estructuras/ListaDoble.hpp"
 #include "estructuras/Cola.hpp"
 #include "estructuras/Pila.hpp"
+#include "estructuras/LD_Generica.hpp"
 
 class Gestor {
 private:
+    LD_Generica<Pila> pilas;
     ListaDoble *cartas;
     Cola reserva;
     Cola descarte;
@@ -66,6 +68,8 @@ public:
     int baseCompleta();
 
     Pila &obtenerBase(char a);
+
+    void verPista(int op);
 };
 
 #endif //PRACTICA1_EDD_GESTOR_HPP

@@ -43,6 +43,26 @@ string Carta::representar() {
     return "#####";
 }
 
+string Carta::ver() {
+    string tmp;
+    switch (this->tipo) {
+        case 'C':   //Carta de Corazones
+            tmp += "<3";
+            break;
+        case 'D':   //Carta de Diamantes
+            tmp += "<>";
+            break;
+        case 'E':   //Carta de Espadas
+            tmp += "¡!";
+            break;
+        case 'T':   //Carta de Treboles
+            tmp += "EB";
+            break;
+    }
+    tmp += color;
+    return ((valor == 10) ? "10" + tmp : simbolo + tmp + " ");
+}
+
 bool Carta::isVisibilidad() const {
     return visibilidad;
 }

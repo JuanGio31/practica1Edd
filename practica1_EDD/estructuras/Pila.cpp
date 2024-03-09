@@ -35,7 +35,7 @@ void Pila::mostrar() {
         Nodo *curr = cima;
         cout << "Listado de todos los elementos de la pila." << endl;
         while (curr != nullptr) {
-            cout << curr->mostrar() << " - ";
+            cout << curr->ver() << " - ";
             curr = curr->getSiguiente();
         }
         cout << endl;

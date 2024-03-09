@@ -38,6 +38,8 @@ public:
 
     char getColor();
     char getTipo();
+
+    string ver();
 };
 
 #endif //PRACTICA1_EDD_CARTA_HPP

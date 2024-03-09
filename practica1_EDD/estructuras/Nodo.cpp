@@ -4,7 +4,7 @@
 
 #include "Nodo.hpp"
 
- Carta &Nodo::getDato()  {
+Carta &Nodo::getDato() {
     return dato;
 }
 
@@ -24,4 +24,8 @@ Nodo::Nodo(const Carta &dato) : dato(dato) {}
 
 string Nodo::mostrar() {
     return this->dato.representar();
+}
+
+string Nodo::ver() {
+    return this->dato.ver();
 }

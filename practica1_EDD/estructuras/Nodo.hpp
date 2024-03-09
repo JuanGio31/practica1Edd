@@ -22,6 +22,8 @@ public:
 
     void setSiguiente(Nodo *siguiente);
     string mostrar();
+
+    string ver();
 };
 
 #endif //PRACTICA1_EDD_NODO_HPP

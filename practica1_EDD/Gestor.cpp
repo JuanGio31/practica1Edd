@@ -75,6 +75,16 @@ void Gestor::verCartas() {
 Gestor::Gestor() {
     cartas = new ListaDoble();
     repartir();
+    pilas.addFinal(a1);
+    pilas.addFinal(b1);
+    pilas.addFinal(c1);
+    pilas.addFinal(d1);
+    pilas.addFinal(e1);
+    pilas.addFinal(f1);
+}
+
+void Gestor::verPista(int indice) {
+    pilas.obtenerContenido(indice).mostrar();
 }
 
 int Gestor::baseCompleta() {

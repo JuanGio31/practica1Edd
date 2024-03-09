@@ -53,6 +53,19 @@ void Juego::llenarTab() {
     llenarColTab(gestor.getF1(), 5);
     llenarColTab(gestor.getG1(), 6);
 
+//    llenarColTab(gestor.obtenerBase('D'), 3);
+//    llenarColTab(gestor.obtenerBase('E'), 4);
+//    llenarColTab(gestor.obtenerBase('F'), 5);
+//    llenarColTab(gestor.obtenerBase('G'), 6);
+
+}
+
+void Juego::llenarBase(Pila pila, int columna) {
+    if (pila.vacia()) {
+        tablero[0][columna] = "[     ]";
+    } else {
+        tablero[0][columna] = "[" + pila.getCima()->mostrar() + "]";
+    }
 }
 
 void Juego::llenarColTab(Pila pila, int columna) {
@@ -122,7 +135,8 @@ void Juego::verMenu() {
                     "\t 2. Ver Reserva.\n"
                     "\t 3. Mover Carta a Base.\n"
                     "\t 4. Mover descarte a Tablero.\n"
-                    "\t 5. Pista\n\n"
+                    "\t 5. Mover descarte a Base\n"
+                    "\t 6. Pista\n\n"
                     "\tSelecciona una opcion o ingresa 9 para Salir > ";
     int op = -1;
     while (op != 9) {
@@ -147,13 +161,24 @@ void Juego::verMenu() {
                 gestor.rotarColas();
                 break;
             case 3:
-                cout << "op 3";
+                char columna, base;
+                cout << "\n\tSelecciona una columna [A-G] > ";
+                cin >> columna;
+                cout << "\n\tSelecciona la Base destino [D-G]" << " > ";
+                cin >> base;
+                // moverABase(columna, base);
                 break;
             case 4:
                 cout << "op 4";
                 break;
+                break;
             case 5:
 
+            case 6:
+                char tmp;
+                cout << "\n\tSelecciona una columna [A-G] > ";
+                cin >> tmp;
+                verPista(tmp);
                 break;
             case 9:
                 cout << "\nFin del Juego...";
@@ -184,10 +209,49 @@ void Juego::moverEntreTablero(char a, char b) {
     }
 }
 
+void Juego::moverABase(char a, char b) {
+    try {
+        gestor.trasladarCartaTabABase(
+                gestor.obtenerPilaEspecifica(a),
+                gestor.obtenerBase(b));
+    } catch (const char *e) {
+        cout << e << endl;
+    }
+}
+
 void Juego::juegoGanado() {
     if (gestor.baseCompleta() == 1) {
         cout << endl << "\n\tJUEGO COMPLETADO!!!" << endl;
         exit(EXIT_SUCCESS);
+    }
+}
+
+void Juego::verPista(char a) {
+    switch (a) {
+        case 'A':
+            cout << endl << "\tFuera de Limite";
+            break;
+        case 'B':
+            gestor.verPista(0);
+            break;
+        case 'C':
+            gestor.verPista(1);
+            break;
+        case 'D':
+            gestor.verPista(2);
+            break;
+        case 'E':
+            gestor.verPista(3);
+            break;
+        case 'F':
+            gestor.verPista(4);
+            break;
+        case 'G':
+            gestor.verPista(5);
+            break;
+        default:
+            cout << endl << "\tOpcion no valida";
+            break;
     }
 }
 

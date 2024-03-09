@@ -28,6 +28,12 @@ public:
     void moverEntreTablero(char a, char b);
 
     void juegoGanado();
+
+    void verPista(char a);
+
+    void moverABase(char a, char b);
+
+    void llenarBase(Pila pila, int columna);
 };
 
 #endif //PRACTICA1_EDD_JUEGO_HPP
