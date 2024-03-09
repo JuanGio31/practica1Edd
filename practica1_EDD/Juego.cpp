@@ -5,6 +5,17 @@
 #include <limits>
 #include "Juego.hpp"
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
+void limpiarPantalla() {
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
 
 void Juego::llenarTab() {
     for (int i = 0; i < 13; ++i) {
@@ -110,7 +121,8 @@ void Juego::verMenu() {
     string menuOp = "\n\t 1. Mover Carta en Tablero.\n"
                     "\t 2. Ver Reserva.\n"
                     "\t 3. Mover Carta a Base.\n"
-                    "\t 4. Mover descarte a Tablero.\n\n"
+                    "\t 4. Mover descarte a Tablero.\n"
+                    "\t 5. Pista\n\n"
                     "\tSelecciona una opcion o ingresa 9 para Salir > ";
     int op = -1;
     while (op != 9) {
@@ -140,6 +152,9 @@ void Juego::verMenu() {
             case 4:
                 cout << "op 4";
                 break;
+            case 5:
+
+                break;
             case 9:
                 cout << "\nFin del Juego...";
                 break;
@@ -149,18 +164,30 @@ void Juego::verMenu() {
         }
         cout << endl;
         cin.clear();
+        limpiarPantalla();
     }
 }
 
 void Juego::moverEntreTablero(char a, char b) {
     if (a != b) {
-        gestor.trasladar(
-                gestor.obtenerPilaEspecifica(a),
-                gestor.obtenerPilaEspecifica(b));
+        try {
+            gestor.trasladar(
+                    gestor.obtenerPilaEspecifica(a),
+                    gestor.obtenerPilaEspecifica(b));
+        } catch (const char *e) {
+            cout << e << endl;
+        }
     } else {
         cout << endl << "\tNo es posible realizar el movimiento, "
              << " por que " << a << " y " << b << " son iguales."
              << endl;
+    }
+}
+
+void Juego::juegoGanado() {
+    if (gestor.baseCompleta() == 1) {
+        cout << endl << "\n\tJUEGO COMPLETADO!!!" << endl;
+        exit(EXIT_SUCCESS);
     }
 }
 

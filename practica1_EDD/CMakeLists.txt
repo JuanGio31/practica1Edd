@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.27)
-project(practica1_EDD DESCRIPTION "Practica No.1 de estructura de datos, Solitario en c++" LANGUAGES CXX)
+
+project(practica1_EDD DESCRIPTION "Practica No.1 de estructura de datos, Solitario en c++")
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -22,5 +23,3 @@ add_executable(practica1_EDD main.cpp
         Gestor.hpp
         estructuras/LD_Generica.hpp
 )
-
-target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/)

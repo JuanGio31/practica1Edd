@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/giovanic/CLionProjects/practica1Edd/practica1_EDD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/giovanic/CLionProjects/practica1Edd/practica1_EDD
+CMAKE_BINARY_DIR = /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/practica1_EDD.dir/depend.make
@@ -70,9 +70,9 @@ include CMakeFiles/practica1_EDD.dir/progress.make
 include CMakeFiles/practica1_EDD.dir/flags.make
 
 CMakeFiles/practica1_EDD.dir/main.cpp.o: CMakeFiles/practica1_EDD.dir/flags.make
-CMakeFiles/practica1_EDD.dir/main.cpp.o: main.cpp
+CMakeFiles/practica1_EDD.dir/main.cpp.o: /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/main.cpp
 CMakeFiles/practica1_EDD.dir/main.cpp.o: CMakeFiles/practica1_EDD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/practica1_EDD.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/practica1_EDD.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica1_EDD.dir/main.cpp.o -MF CMakeFiles/practica1_EDD.dir/main.cpp.o.d -o CMakeFiles/practica1_EDD.dir/main.cpp.o -c /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/main.cpp
 
 CMakeFiles/practica1_EDD.dir/main.cpp.i: cmake_force
@@ -84,9 +84,9 @@ CMakeFiles/practica1_EDD.dir/main.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/main.cpp -o CMakeFiles/practica1_EDD.dir/main.cpp.s
 
 CMakeFiles/practica1_EDD.dir/Carta.cpp.o: CMakeFiles/practica1_EDD.dir/flags.make
-CMakeFiles/practica1_EDD.dir/Carta.cpp.o: Carta.cpp
+CMakeFiles/practica1_EDD.dir/Carta.cpp.o: /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Carta.cpp
 CMakeFiles/practica1_EDD.dir/Carta.cpp.o: CMakeFiles/practica1_EDD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/practica1_EDD.dir/Carta.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/practica1_EDD.dir/Carta.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica1_EDD.dir/Carta.cpp.o -MF CMakeFiles/practica1_EDD.dir/Carta.cpp.o.d -o CMakeFiles/practica1_EDD.dir/Carta.cpp.o -c /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Carta.cpp
 
 CMakeFiles/practica1_EDD.dir/Carta.cpp.i: cmake_force
@@ -98,9 +98,9 @@ CMakeFiles/practica1_EDD.dir/Carta.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Carta.cpp -o CMakeFiles/practica1_EDD.dir/Carta.cpp.s
 
 CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o: CMakeFiles/practica1_EDD.dir/flags.make
-CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o: estructuras/Pila.cpp
+CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o: /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Pila.cpp
 CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o: CMakeFiles/practica1_EDD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o -MF CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o.d -o CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.o -c /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Pila.cpp
 
 CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.i: cmake_force
@@ -112,9 +112,9 @@ CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Pila.cpp -o CMakeFiles/practica1_EDD.dir/estructuras/Pila.cpp.s
 
 CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o: CMakeFiles/practica1_EDD.dir/flags.make
-CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o: estructuras/Nodo.cpp
+CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o: /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Nodo.cpp
 CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o: CMakeFiles/practica1_EDD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o -MF CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o.d -o CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.o -c /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Nodo.cpp
 
 CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.i: cmake_force
@@ -126,9 +126,9 @@ CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Nodo.cpp -o CMakeFiles/practica1_EDD.dir/estructuras/Nodo.cpp.s
 
 CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o: CMakeFiles/practica1_EDD.dir/flags.make
-CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o: estructuras/Cola.cpp
+CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o: /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Cola.cpp
 CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o: CMakeFiles/practica1_EDD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o -MF CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o.d -o CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.o -c /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Cola.cpp
 
 CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.i: cmake_force
@@ -140,9 +140,9 @@ CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Cola.cpp -o CMakeFiles/practica1_EDD.dir/estructuras/Cola.cpp.s
 
 CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o: CMakeFiles/practica1_EDD.dir/flags.make
-CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o: estructuras/NodoDoble.cpp
+CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o: /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/NodoDoble.cpp
 CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o: CMakeFiles/practica1_EDD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o -MF CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o.d -o CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.o -c /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/NodoDoble.cpp
 
 CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.i: cmake_force
@@ -154,9 +154,9 @@ CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/NodoDoble.cpp -o CMakeFiles/practica1_EDD.dir/estructuras/NodoDoble.cpp.s
 
 CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o: CMakeFiles/practica1_EDD.dir/flags.make
-CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o: estructuras/ListaDoble.cpp
+CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o: /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/ListaDoble.cpp
 CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o: CMakeFiles/practica1_EDD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o -MF CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o.d -o CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.o -c /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/ListaDoble.cpp
 
 CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.i: cmake_force
@@ -168,9 +168,9 @@ CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/ListaDoble.cpp -o CMakeFiles/practica1_EDD.dir/estructuras/ListaDoble.cpp.s
 
 CMakeFiles/practica1_EDD.dir/Juego.cpp.o: CMakeFiles/practica1_EDD.dir/flags.make
-CMakeFiles/practica1_EDD.dir/Juego.cpp.o: Juego.cpp
+CMakeFiles/practica1_EDD.dir/Juego.cpp.o: /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Juego.cpp
 CMakeFiles/practica1_EDD.dir/Juego.cpp.o: CMakeFiles/practica1_EDD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/practica1_EDD.dir/Juego.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/practica1_EDD.dir/Juego.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica1_EDD.dir/Juego.cpp.o -MF CMakeFiles/practica1_EDD.dir/Juego.cpp.o.d -o CMakeFiles/practica1_EDD.dir/Juego.cpp.o -c /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Juego.cpp
 
 CMakeFiles/practica1_EDD.dir/Juego.cpp.i: cmake_force
@@ -182,9 +182,9 @@ CMakeFiles/practica1_EDD.dir/Juego.cpp.s: cmake_force
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Juego.cpp -o CMakeFiles/practica1_EDD.dir/Juego.cpp.s
 
 CMakeFiles/practica1_EDD.dir/Gestor.cpp.o: CMakeFiles/practica1_EDD.dir/flags.make
-CMakeFiles/practica1_EDD.dir/Gestor.cpp.o: Gestor.cpp
+CMakeFiles/practica1_EDD.dir/Gestor.cpp.o: /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Gestor.cpp
 CMakeFiles/practica1_EDD.dir/Gestor.cpp.o: CMakeFiles/practica1_EDD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/practica1_EDD.dir/Gestor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/practica1_EDD.dir/Gestor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/practica1_EDD.dir/Gestor.cpp.o -MF CMakeFiles/practica1_EDD.dir/Gestor.cpp.o.d -o CMakeFiles/practica1_EDD.dir/Gestor.cpp.o -c /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Gestor.cpp
 
 CMakeFiles/practica1_EDD.dir/Gestor.cpp.i: cmake_force
@@ -221,7 +221,7 @@ practica1_EDD: CMakeFiles/practica1_EDD.dir/Juego.cpp.o
 practica1_EDD: CMakeFiles/practica1_EDD.dir/Gestor.cpp.o
 practica1_EDD: CMakeFiles/practica1_EDD.dir/build.make
 practica1_EDD: CMakeFiles/practica1_EDD.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable practica1_EDD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable practica1_EDD"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/practica1_EDD.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -233,6 +233,6 @@ CMakeFiles/practica1_EDD.dir/clean:
 .PHONY : CMakeFiles/practica1_EDD.dir/clean
 
 CMakeFiles/practica1_EDD.dir/depend:
-	cd /home/giovanic/CLionProjects/practica1Edd/practica1_EDD && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/giovanic/CLionProjects/practica1Edd/practica1_EDD /home/giovanic/CLionProjects/practica1Edd/practica1_EDD /home/giovanic/CLionProjects/practica1Edd/practica1_EDD /home/giovanic/CLionProjects/practica1Edd/practica1_EDD /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/CMakeFiles/practica1_EDD.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/giovanic/CLionProjects/practica1Edd/practica1_EDD /home/giovanic/CLionProjects/practica1Edd/practica1_EDD /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/build/CMakeFiles/practica1_EDD.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/practica1_EDD.dir/depend
 

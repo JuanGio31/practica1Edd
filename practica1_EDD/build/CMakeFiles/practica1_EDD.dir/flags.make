@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/giovanic/CLionProjects/practica1Edd/practica1_EDD
+CXX_INCLUDES = 
 
 CXX_FLAGS = 
 

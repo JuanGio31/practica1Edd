@@ -37,6 +37,7 @@ public:
     void cambiarVisibilidad(int op);
 
     char getColor();
+    char getTipo();
 };
 
 #endif //PRACTICA1_EDD_CARTA_HPP

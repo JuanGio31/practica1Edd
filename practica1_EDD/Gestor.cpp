@@ -77,6 +77,61 @@ Gestor::Gestor() {
     repartir();
 }
 
+int Gestor::baseCompleta() {
+    if (baseNo1.contador() == 13 && baseNo2.contador() == 13
+        && baseNo3.contador() == 13 && baseNo4.contador() == 13) {
+        return 1;
+    }
+    return 0;
+}
+
+/**
+ * metodo que sirve para mover una carta del tablero hacia la base.
+ * @param p1 representa la pila seleccionada.
+ * @param base representa la base.
+ */
+void Gestor::trasladarCartaTabABase(Pila &p1, Pila &base) {
+    if (!p1.vacia()) {
+        int x = p1.getCima()->getDato().getValor();
+
+        //Si la pila destino esta vacia, es posible insertar una carta
+        // siempre y cuando sea una K (valor == 13)
+        if (base.vacia()) {
+            if (x == 1) {
+                base.push(p1.pop());
+                return;
+            }
+        }
+
+        int y = base.getCima()->getDato().getValor();
+        if (x == y + 1) {
+            if (p1.getCima()->getDato().getTipo() == base.getCima()->getDato().getTipo()) {
+                base.push(p1.pop());
+            } else {
+                cout << endl << "\tNo es posible realizar el movimiento."
+                     << endl << "\tLos colores de las cartas(R y N) deben ser los mismos\n";
+            }
+        } else {
+            cout << endl << "\tNo es posible realizar el movimiento." << endl;
+        }
+    } else {
+        cout << endl << "\tPila vacia, no hay cartas a seleccionar." << endl;
+    }
+}
+
+Pila &Gestor::obtenerBase(char a) {
+    switch (a) {
+        case 'D':
+            return baseNo1;
+        case 'E':
+            return baseNo2;
+        case 'F':
+            return baseNo3;
+        case 'G':
+            return baseNo4;
+    }
+    throw "\tCaracter Invalido, intenta de nuevo";
+}
 
 /**
  * metodo que sirve para mover una carta de una Pila a Estructura.
@@ -84,17 +139,31 @@ Gestor::Gestor() {
  * @param p2 representa la pila destino
  */
 void Gestor::trasladar(Pila &p1, Pila &p2) {
-    int x = p1.getCima()->getDato().getValor();
-    int y = p2.getCima()->getDato().getValor();
-    if (x == y - 1) {
-        if (p1.getCima()->getDato().getColor() != p2.getCima()->getDato().getColor()) {
-            p2.push(p1.pop());
+    if (!p1.vacia()) {
+        int x = p1.getCima()->getDato().getValor();
+
+        //Si la pila destino esta vacia, es posible insertar una carta
+        // siempre y cuando sea una K (valor == 13)
+        if (p2.vacia()) {
+            if (x == 13) {
+                p2.push(p1.pop());
+                return;
+            }
+        }
+
+        int y = p2.getCima()->getDato().getValor();
+        if (x == y - 1) {
+            if (p1.getCima()->getDato().getColor() != p2.getCima()->getDato().getColor()) {
+                p2.push(p1.pop());
+            } else {
+                cout << endl << "\tNo es posible realizar el movimiento."
+                     << endl << "\tLos colores de las cartas(R y N) deben ir intercalados\n";
+            }
         } else {
-            cout << endl << "\tNo es posible realizar el movimiento."
-                 << endl << "\tLos colores de las cartas(R y N) deben ir intercalados\n";
+            cout << endl << "\tNo es posible realizar el movimiento." << endl;
         }
     } else {
-        cout << endl << "\tNo es posible realizar el movimiento." << endl;
+        cout << endl << "\tPila vacia, no hay cartas a seleccionar." << endl;
     }
 }
 
@@ -131,7 +200,7 @@ Pila &Gestor::obtenerPilaEspecifica(char a) {
         case 'G':
             return this->getG1();
     }
-    throw "No encontrado";
+    throw "\tCaracter invalido, intenta de nuevo";
 }
 
 Cola Gestor::getReserva() const { return reserva; }

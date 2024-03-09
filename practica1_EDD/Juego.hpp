@@ -26,6 +26,8 @@ public:
     void llenarColTab(Pila list, int columna);
 
     void moverEntreTablero(char a, char b);
+
+    void juegoGanado();
 };
 
 #endif //PRACTICA1_EDD_JUEGO_HPP

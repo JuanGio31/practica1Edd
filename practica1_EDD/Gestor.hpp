@@ -60,6 +60,12 @@ public:
     void trasladar(Pila &p1, Pila &p2);
 
     Pila &obtenerPilaEspecifica(char a);
+
+    void trasladarCartaTabABase(Pila &p1, Pila &base);
+
+    int baseCompleta();
+
+    Pila &obtenerBase(char a);
 };
 
 #endif //PRACTICA1_EDD_GESTOR_HPP

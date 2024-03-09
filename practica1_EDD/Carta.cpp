@@ -69,3 +69,5 @@ int Carta::getValor() { return this->valor; }
 
 char Carta::getColor() { return this->color; }
 
+char Carta::getTipo() { return this->tipo; }
+
