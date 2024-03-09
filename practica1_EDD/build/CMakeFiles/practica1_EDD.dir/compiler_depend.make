@@ -187,6 +187,7 @@ CMakeFiles/practica1_EDD.dir/Gestor.cpp.o: /home/giovanic/CLionProjects/practica
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Gestor.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Carta.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Cola.hpp \
+  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/LD_Generica.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/ListaDoble.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Nodo.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/NodoDoble.hpp \
@@ -384,6 +385,7 @@ CMakeFiles/practica1_EDD.dir/Juego.cpp.o: /home/giovanic/CLionProjects/practica1
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Juego.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Carta.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Cola.hpp \
+  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/LD_Generica.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/ListaDoble.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Nodo.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/NodoDoble.hpp \
@@ -1493,6 +1495,7 @@ CMakeFiles/practica1_EDD.dir/main.cpp.o: /home/giovanic/CLionProjects/practica1E
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Juego.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Carta.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Cola.hpp \
+  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/LD_Generica.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/ListaDoble.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Nodo.hpp \
   /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/NodoDoble.hpp \
@@ -1853,6 +1856,8 @@ CMakeFiles/practica1_EDD.dir/main.cpp.o: /home/giovanic/CLionProjects/practica1E
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/LD_Generica.hpp:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 

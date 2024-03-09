@@ -189,6 +189,7 @@ CMakeFiles/practica1_EDD.dir/Gestor.cpp.o
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Gestor.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Carta.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Cola.hpp
+ /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/LD_Generica.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/ListaDoble.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Nodo.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/NodoDoble.hpp
@@ -387,6 +388,7 @@ CMakeFiles/practica1_EDD.dir/Juego.cpp.o
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Juego.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Carta.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Cola.hpp
+ /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/LD_Generica.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/ListaDoble.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Nodo.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/NodoDoble.hpp
@@ -1502,6 +1504,7 @@ CMakeFiles/practica1_EDD.dir/main.cpp.o
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Juego.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/Carta.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Cola.hpp
+ /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/LD_Generica.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/ListaDoble.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/Nodo.hpp
  /home/giovanic/CLionProjects/practica1Edd/practica1_EDD/estructuras/NodoDoble.hpp
